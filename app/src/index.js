@@ -50,7 +50,7 @@ const App = {
 
   putStarUpForSale: async function() {
     const { putStarUpForSale } = this.meta.methods;
-    const starPrice = document.getElementById("starPrice").value;
+    const starPrice = App.web3.utils.toBN(document.getElementById("starPrice").value);
     const priceStarId = document.getElementById("priceStarId").value;
     await putStarUpForSale(priceStarId, starPrice).send({from: this.account});
     App.setStatus( priceStarId + "  price is set to " + starPrice);
@@ -87,7 +87,7 @@ window.addEventListener("load", async function() {
   } else {
     console.warn("No web3 detected. Falling back to http://127.0.0.1:9545. You should remove this fallback when you deploy live",);
     // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
-    App.web3 = new Web3(new Web3.providers.HttpProvider("http://127.0.0.1:9545"),);
+    App.web3 = new Web3(new Web3.providers.HttpProvider("https://goerli.infura.io/v3/0b4dddcdea034230b219025280f64794"),);
   }
 
   App.start();
