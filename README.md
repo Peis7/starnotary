@@ -3,9 +3,11 @@
 
 **PROJECT: Decentralized Star Notary Service Project** - For this project, you will create a DApp by adding functionality with your smart contract and deploy it on the public testnet.
 ### ERC721
- **Name**: Ad  Astra
-**Symbol**: AST
-**Token Address: [0x07bc2Bf5D2DA6C52Ee5572D3B8E32F27dBCeE0AD](https://goerli.etherscan.io/token/0x07bc2Bf5D2DA6C52Ee5572D3B8E32F27dBCeE0AD)**
+ - **Name**: Ad  Astra
+ 
+- **Symbol**: AST
+
+- **Token Address: [0x07bc2Bf5D2DA6C52Ee5572D3B8E32F27dBCeE0AD](https://goerli.etherscan.io/token/0x07bc2Bf5D2DA6C52Ee5572D3B8E32F27dBCeE0AD)**
 ### Dependencies
 
 For this project, you will need to have:
@@ -18,3 +20,5 @@ For this project, you will need to have:
 6. **@openzeppelin/contracts": "^4.8.0"**
 7. **@truffle/hdwallet-provider": "^2.1.2"**
 8. **MetaMask Version: 10.22.1**
+
+For current and future compatibility after :panda_face: **The Merge** :panda_face: I am using [Goerli Testnet](https://goerli.net/) for deployment
